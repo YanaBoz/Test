@@ -1,0 +1,64 @@
+﻿@model Test.UI.Models.Turnover
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Turnover</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Group_ID" class="control-label"></label>
+                <input asp-for="Group_ID" class="form-control" />
+                <span asp-validation-for="Group_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Class_ID" class="control-label"></label>
+                <input asp-for="Class_ID" class="form-control" />
+                <span asp-validation-for="Class_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Account" class="control-label"></label>
+                <input asp-for="Account" class="form-control" />
+                <span asp-validation-for="Account" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Start_Active" class="control-label"></label>
+                <input asp-for="Start_Active" class="form-control" />
+                <span asp-validation-for="Start_Active" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Start_Passive" class="control-label"></label>
+                <input asp-for="Start_Passive" class="form-control" />
+                <span asp-validation-for="Start_Passive" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Turn_Debit" class="control-label"></label>
+                <input asp-for="Turn_Debit" class="form-control" />
+                <span asp-validation-for="Turn_Debit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Turn_Credit" class="control-label"></label>
+                <input asp-for="Turn_Credit" class="form-control" />
+                <span asp-validation-for="Turn_Credit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

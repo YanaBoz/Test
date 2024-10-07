@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Test.UI.Models.Turnover>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Group_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Class_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Start_Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Start_Passive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turn_Debit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Turn_Credit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Group_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Account)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start_Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start_Passive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Turn_Debit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Turn_Credit)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
