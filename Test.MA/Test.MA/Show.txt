@@ -1,0 +1,4 @@
+CREATE PROCEDURE [dbo].[db_Show]
+AS
+	SELECT *
+	FROM Stroka;
