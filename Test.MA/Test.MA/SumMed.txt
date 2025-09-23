@@ -1,9 +1,0 @@
-CREATE PROCEDURE [dbo].[db.SumMed]
-AS
-	SELECT (
-	SELECT TOP (1) Percentile_Disc (0.5)
-	WITHIN GROUP (ORDER BY Num_Float)
-	OVER()
-	FROM Stroka) AS Mediana
-	, sum(Num_Int) AS Summa
-	FROM Stroka;

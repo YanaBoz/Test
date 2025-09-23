@@ -1,0 +1,15 @@
+V:\BSUIR\Test\Test.MA\Test.Application\bin\Debug\net8.0\Test.Application.deps.json
+V:\BSUIR\Test\Test.MA\Test.Application\bin\Debug\net8.0\Test.Application.dll
+V:\BSUIR\Test\Test.MA\Test.Application\bin\Debug\net8.0\Test.Application.pdb
+V:\BSUIR\Test\Test.MA\Test.Application\bin\Debug\net8.0\Test.Core.dll
+V:\BSUIR\Test\Test.MA\Test.Application\bin\Debug\net8.0\Test.Core.pdb
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.csproj.AssemblyReference.cache
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.GeneratedMSBuildEditorConfig.editorconfig
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.AssemblyInfoInputs.cache
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.AssemblyInfo.cs
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.csproj.CoreCompileInputs.cache
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.App.60018A54.Up2Date
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.dll
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\refint\Test.Application.dll
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\Test.Application.pdb
+V:\BSUIR\Test\Test.MA\Test.Application\obj\Debug\net8.0\ref\Test.Application.dll

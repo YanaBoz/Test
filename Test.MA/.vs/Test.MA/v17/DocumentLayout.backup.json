@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\Test.MA\\",
-  "Documents": [],
+  "WorkspaceRootPath": "V:\\BSUIR\\Test\\Test.MA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72162444-B5C0-4E24-8461-78010F0D8E09}|Test.Application\\Test.Application.csproj|v:\\bsuir\\test\\test.ma\\test.application\\services\\fileprocessingservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72162444-B5C0-4E24-8461-78010F0D8E09}|Test.Application\\Test.Application.csproj|solutionrelative:test.application\\services\\fileprocessingservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B24A02B8-9CBD-43EA-A426-B3830BFF6A31}|Test.UI\\Test.UI.csproj|v:\\bsuir\\test\\test.ma\\test.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B24A02B8-9CBD-43EA-A426-B3830BFF6A31}|Test.UI\\Test.UI.csproj|solutionrelative:test.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +18,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:210250908:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:210250908:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileProcessingService .cs",
+              "DocumentMoniker": "V:\\BSUIR\\Test\\Test.MA\\Test.Application\\Services\\FileProcessingService .cs",
+              "RelativeDocumentMoniker": "Test.Application\\Services\\FileProcessingService .cs",
+              "ToolTip": "V:\\BSUIR\\Test\\Test.MA\\Test.Application\\Services\\FileProcessingService .cs*",
+              "RelativeToolTip": "Test.Application\\Services\\FileProcessingService .cs*",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAQwAYBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T21:50:11.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "V:\\BSUIR\\Test\\Test.MA\\Test.UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Test.UI\\Controllers\\HomeController.cs",
+              "ToolTip": "V:\\BSUIR\\Test\\Test.MA\\Test.UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Test.UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T21:50:03.063Z",
+              "EditorCaption": ""
             }
           ]
         }
