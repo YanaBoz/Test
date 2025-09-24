@@ -1,0 +1,50 @@
+﻿@model List<Test.Application.DTOs.ConstructorDto>
+
+@{
+    ViewData["Title"] = "Результаты обработки";
+}
+
+<h2>Данные из Excel</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan="2">Входящее сальдо</th>
+            <th colspan="2">Обороты</th>
+            <th colspan="2">Исходящее сальдо</th>
+        </tr>
+        <tr>
+            <th>Б/сч</th>
+            <th>Актив</th>
+            <th>Пассив</th>
+            <th>Дебет</th>
+            <th>Кредит</th>
+            <th>Актив</th>
+            <th>Пассив</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var group in Model.GroupBy(x => x.CL))
+        {
+            <tr>
+                <th colspan="8" class="text-center">@group.Key</th>
+            </tr>
+            @foreach (var item in group)
+            {
+                <tr>
+                    <td>@item.B_sch</td>
+                    <td>@item.VS_A.ToString("N2")</td>
+                    <td>@item.VS_P.ToString("N2")</td>
+                    <td>@item.O_D.ToString("N2")</td>
+                    <td>@item.O_C.ToString("N2")</td>
+                    <td>@item.IS_A.ToString("N2")</td>
+                    <td>@item.IS_P.ToString("N2")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<a asp-action="Files" class="btn btn-secondary">Назад к файлам</a>
+<a asp-action="Index" class="btn btn-primary">На главную</a>

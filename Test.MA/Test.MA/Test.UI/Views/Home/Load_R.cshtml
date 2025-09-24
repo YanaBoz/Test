@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Test.Application.DTOs.ConstructorDto>
+
+<h2>Данные из Excel</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan="2" class="text-left">ВХОДЯЩЕЕ САЛЬДО</th>
+            <th colspan="2" class="text-left">ОБОРОТЫ</th>
+            <th colspan="2" class="text-left">ИСХОДЯЩЕЕ САЛЬДО</th>
+
+        </tr>
+    </thead>
+    <thead>
+        <tr>
+            @* <th>@Html.DisplayNameFor(model => model[0].CL)</th> *@
+            <th>Б/сч</th>
+            <th>Актив</th>
+            <th>Пассив</th>
+            <th>Дебет</th>
+            <th>Кредит</th>
+            <th>Актив</th>
+            <th>Пассив</th> @* 8 *@
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var group in Model.GroupBy(x => x.CL))
+        {
+            <tr>
+                <th colspan="8" class="text-center">
+                    @group.Key
+                </th>
+            </tr>
+            @foreach (var item in group)
+            {
+                <tr>
+                    <td>@item.B_sch</td>
+                    <td>@item.VS_A.ToString("N2")</td>
+                    <td>@item.VS_P.ToString("N2")</td>
+                    <td>@item.O_D.ToString("N2")</td>
+                    <td>@item.O_C.ToString("N2")</td>
+                    <td>@item.IS_A.ToString("N2")</td>
+                    <td>@item.IS_P.ToString("N2")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

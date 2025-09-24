@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<h2>Загрузка Excel</h2>
+
+<form asp-action="Upload" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Выберите Excel-файл</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Загрузить</button>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="text-danger mt-2">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+<br>
+<a asp-action="Files" class="btn btn-secondary">Список загруженных файлов</a>
